@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HUGO on My New Test Site</title>
+    <link>http://localhost:1313/rtn-wiki/hugo/</link>
+    <description>Recent content in HUGO on My New Test Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Oct 2023 12:28:29 +0300</lastBuildDate><atom:link href="http://localhost:1313/rtn-wiki/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Поиск по сайту</title>
+      <link>http://localhost:1313/rtn-wiki/hugo/search/</link>
+      <pubDate>Tue, 24 Oct 2023 09:59:18 +0300</pubDate>
+      
+      <guid>http://localhost:1313/rtn-wiki/hugo/search/</guid>
+      <description>Установка pagefind Поиск по сайту Для работы поиска по сайту необходимо запускать hugo с сохранением сгенерированых файлов на диск:
+$ hugo serve --destination pub Индексация страниц запускается следующей командой:
+npx -y pagefind --site pub Примечание Интересно, но в некоторых случаях кое-что не удалось найти:
+/home - слово сразу после слеша (front - слово сразу после скобки </description>
+    </item>
+    
+    <item>
+      <title>Использование hugo</title>
+      <link>http://localhost:1313/rtn-wiki/hugo/usage/</link>
+      <pubDate>Mon, 16 Oct 2023 12:16:30 +0300</pubDate>
+      
+      <guid>http://localhost:1313/rtn-wiki/hugo/usage/</guid>
+      <description>Создание сайта $ hugo new site acewiki В этой команде acewiki &amp;ndash; это название сайта. В результате в текущем каталоге будет создан подкат acewiki, содержащий пустую структуру сайта.
+hugotest/ └── acewiki ├── archetypes │ └── default.md ├── assets ├── content ├── data ├── hugo.toml ├── i18n ├── layouts ├── static └── themes Запуск сайта Выполняется командой hugo serve.
+-D, --buildDrafts &amp;ndash; include content marked as draft -d, --destination publishDir &amp;ndash; по умолчанию сайт размещается в памяти.</description>
+    </item>
+    
+    <item>
+      <title>Установка hugo</title>
+      <link>http://localhost:1313/rtn-wiki/hugo/installation/</link>
+      <pubDate>Mon, 16 Oct 2023 12:16:28 +0300</pubDate>
+      
+      <guid>http://localhost:1313/rtn-wiki/hugo/installation/</guid>
+      <description>Установка Ссылка на архив программы https://github.com/gohugoio/hugo/releases/tag/v0.119.0 &amp;ndash; ссылка на страницу с бинарниками.
+hugo.exe &amp;raquo; D:\cygwin64\bin hugo_extended_0.119.0_linux-amd64.deb dpkg -i hugo_extended_0.119.0_linux-amd64.deb dpkg --get-selected |grep hugo Подключение темы $ cd acewiki $ git init $ git submodule add https://github.com/vantagedesign/ace-documentation.git themes/ace-documentation $ echo &amp;#34;theme = &amp;#39;ace-documentation&amp;#39;&amp;#34; &amp;gt;&amp;gt; hugo.toml Обновление темы $ cd themes/ace-documentation $ git pull </description>
+    </item>
+    
+  </channel>
+</rss>

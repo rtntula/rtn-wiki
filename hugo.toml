@@ -1,0 +1,13 @@
+baseURL = 'https://rtntula.github.io/rtn-wiki/'
+languageCode = 'en-us'
+title = 'My New Test Site'
+theme = 'ace-documentation'
+orderSectionsby = 'title'
+disableReadmoreNav = true
+disableSearch = false
+[outputs]
+  home = ["HTML", "JSON"]
+[params]
+	custom_css = ["style.css", "header.css"]
+[taxonomies]
+	tag = "tags"

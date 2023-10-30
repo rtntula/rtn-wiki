@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Настройки on My New Test Site</title>
+    <link>http://localhost:1313/rtn-wiki/hugo/custom/</link>
+    <description>Recent content in Настройки on My New Test Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Oct 2023 15:55:14 +0300</lastBuildDate><atom:link href="http://localhost:1313/rtn-wiki/hugo/custom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Метаданные станицы по-умолчанию</title>
+      <link>http://localhost:1313/rtn-wiki/hugo/custom/default-frontmatter/</link>
+      <pubDate>Sat, 28 Oct 2023 14:59:53 +0300</pubDate>
+      
+      <guid>http://localhost:1313/rtn-wiki/hugo/custom/default-frontmatter/</guid>
+      <description>При создании новой станицы в ней появляются метаданные ( front matter ). Шаблон для создания таких данных находится в файле /home/eu/hugo/test/archetypes/default.md.
++++ title = &amp;#39;{{ replace .File.ContentBaseName &amp;#34;-&amp;#34; &amp;#34; &amp;#34; | title }}&amp;#39; date = {{ .Date }} draft = true +++ Если необходимо, чтобы в каком либо корневом разделе сайта станицы создавались по другому шаблону, то следует создать файл .md с названием такого раздела, задав в нем нужный шаблон, например, posts.</description>
+    </item>
+    
+    <item>
+      <title>Кастомизация стилей в hugo</title>
+      <link>http://localhost:1313/rtn-wiki/hugo/custom/css-custom/</link>
+      <pubDate>Mon, 16 Oct 2023 15:15:49 +0300</pubDate>
+      
+      <guid>http://localhost:1313/rtn-wiki/hugo/custom/css-custom/</guid>
+      <description>В каталоге static создаем файл style.css, в который вносим нужные правила. Эти кастомизированные правила можно сделать при помощи Инспектора в Инструментах разработчиика. К примеру мне захотелось поменять цвет фона навигационной панели из синего в фиолетовый. Тогда в файл стилей вставим такое правило: html[native-dark-active] .bg-primary { background-color: rgb(204 0 142) !important; } Чтобы наши кастомизированные правила применились, необхдимо в файл hugo.toml добавить следующие строки: [params] custom_css = [&amp;#34;style.css&amp;#34;, &amp;#34;header.css&amp;#34;] Значение поля custom_css представляет собой массив, по этому здесь можно указать несколько файлов стилей.</description>
+    </item>
+    
+    <item>
+      <title>Сортировка страниц в hugo</title>
+      <link>http://localhost:1313/rtn-wiki/hugo/custom/page-sort-order/</link>
+      <pubDate>Mon, 16 Oct 2023 14:02:38 +0300</pubDate>
+      
+      <guid>http://localhost:1313/rtn-wiki/hugo/custom/page-sort-order/</guid>
+      <description>Сортировка страниц по алфавиту Если необходимо сортировать страницы в меню по алфавиту, то прописываем строку
+orderSectionsby = &amp;#39;title&amp;#39; в файле hugo.toml.
+Сортировка страниц по весу В качестве альтернативы имеется возможность сортировать статьи по весу. В таком случае в метаданные страниц вносится запись о ее весе, к примеру, weight = 2.</description>
+    </item>
+    
+  </channel>
+</rss>
