@@ -1,0 +1,6 @@
+body {
+background-color:#f5efe0;
+}
+html[native-dark-active] .bg-primary {
+    background-color: #2f659f !important;
+}

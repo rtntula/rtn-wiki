@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Test Site</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Posts on My New Test Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Oct 2023 09:41:48 +0300</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Link Test</title>
+      <link>//localhost:1313/posts/link-test/</link>
+      <pubDate>Thu, 19 Oct 2023 20:19:08 +0300</pubDate>
+      
+      <guid>//localhost:1313/posts/link-test/</guid>
+      <description>Where will I end up after following this link, I wonder?</description>
+    </item>
+    
+  </channel>
+</rss>

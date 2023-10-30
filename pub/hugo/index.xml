@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HUGO on My New Test Site</title>
+    <link>//localhost:1313/hugo/</link>
+    <description>Recent content in HUGO on My New Test Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Oct 2023 12:28:29 +0300</lastBuildDate><atom:link href="//localhost:1313/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Поиск по сайту</title>
+      <link>//localhost:1313/hugo/search/</link>
+      <pubDate>Tue, 24 Oct 2023 09:59:18 +0300</pubDate>
+      
+      <guid>//localhost:1313/hugo/search/</guid>
+      <description>Установка pagefind Поиск по сайту Для работы поиска по сайту необходимо запускать hugo с сохранением сгенерированых файлов на диск:
+$ hugo serve --destination pub </description>
+    </item>
+    
+    <item>
+      <title>Использование hugo</title>
+      <link>//localhost:1313/hugo/usage/</link>
+      <pubDate>Mon, 16 Oct 2023 12:16:30 +0300</pubDate>
+      
+      <guid>//localhost:1313/hugo/usage/</guid>
+      <description>Создание сайта $ hugo new site acewiki В этой команде acewiki &amp;ndash; это название сайта. В результате в текущем каталоге будет создан подкат acewiki, содержащий пустую структуру сайта.
+hugotest/ └── acewiki ├── archetypes │ └── default.md ├── assets ├── content ├── data ├── hugo.toml ├── i18n ├── layouts ├── static └── themes Запуск сайта выполняется командой hugo serve.
+--destination publishDir &amp;ndash; по умолчанию сайт размещается в памяти. Чтобы положить его на диск, например для индексации, используется данный флаг.</description>
+    </item>
+    
+    <item>
+      <title>Установка hugo</title>
+      <link>//localhost:1313/hugo/installation/</link>
+      <pubDate>Mon, 16 Oct 2023 12:16:28 +0300</pubDate>
+      
+      <guid>//localhost:1313/hugo/installation/</guid>
+      <description>Установка Ссылка на архив программы https://github.com/gohugoio/hugo/releases/tag/v0.119.0 &amp;ndash; ссылка на страницу с бинарниками.
+hugo.exe &amp;raquo; D:\cygwin64\bin hugo_extended_0.119.0_linux-amd64.deb dpkg -i hugo_extended_0.119.0_linux-amd64.deb dpkg --get-selected |grep hugo Подключение темы $ cd acewiki $ git init $ git submodule add https://github.com/vantagedesign/ace-documentation.git themes/ace-documentation $ echo &amp;#34;theme = &amp;#39;ace-documentation&amp;#39;&amp;#34; &amp;gt;&amp;gt; hugo.toml Обновление темы $ cd themes/ace-documentation $ git pull </description>
+    </item>
+    
+  </channel>
+</rss>

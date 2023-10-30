@@ -1,0 +1,106 @@
+[
+{
+	"uri": "//localhost:1313/logseq/usage/",
+	"title": "Использование logseq",
+	"tags": null,
+	"description": "",
+	"content": "Переименование корневого каталога В случае переименования каталога, в котором находятся все данные проги, необходимо в меню базы данных добавить новый граф, выбрав соответствующий кат (зеленый). Это наводит на мысль, что можно вести много таких блокнотов, по дому и по работе, на пример, которые будут отображаться в этом же меню, см. рис. выше (фиолетовый). "
+},
+{
+	"uri": "//localhost:1313/hugo/search/",
+	"title": "Поиск по сайту",
+	"tags": null,
+	"description": "",
+	"content": "Установка pagefind Поиск по сайту Для работы поиска по сайту необходимо запускать hugo с сохранением сгенерированых файлов на диск:\n$ hugo serve --destination pub "
+},
+{
+	"uri": "//localhost:1313/logseq/",
+	"title": "Logseq",
+	"tags": null,
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/logseq/installation/",
+	"title": "Установка logseq",
+	"tags": null,
+	"description": "",
+	"content": "Установка logseq посредством snap По каким-то не выясненным пока причинам установить предлагаемый на сайте appimage пакект программы мне так и не удалось. Нашел в инете следующий вариант установки.\n$ apt update $ apt install snapd $ snap install core $ snap install logseq После перезагрузки стало возможным запустить прогу через диалог run (M-F2).\n"
+},
+{
+	"uri": "//localhost:1313/posts/link-test/",
+	"title": "Link Test",
+	"tags": null,
+	"description": "",
+	"content": "Where will I end up after following this link, I wonder?\n"
+},
+{
+	"uri": "//localhost:1313/posts/",
+	"title": "Posts",
+	"tags": null,
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/",
+	"title": "HOME Page",
+	"tags": null,
+	"description": "",
+	"content": " Logseq Posts HUGO "
+},
+{
+	"uri": "//localhost:1313/hugo/custom/",
+	"title": "Настройки",
+	"tags": null,
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/hugo/custom/css-custom/",
+	"title": "Кастомизация стилей в hugo",
+	"tags": null,
+	"description": "",
+	"content": " В каталоге static создаем файл style.css, в который вносим нужные правила. Эти кастомизированные правила можно сделать при помощи Инспектора в Инструментах разработчиика. К примеру мне захотелось поменять цвет фона навигационной панели из синего в фиолетовый. Тогда в файл стилей вставим такое правило: html[native-dark-active] .bg-primary { background-color: rgb(204 0 142) !important; } Чтобы наши кастомизированные правила применились, необхдимо в файл hugo.toml добавить следующие строки: [params] custom_css = [\u0026#34;style.css\u0026#34;, \u0026#34;header.css\u0026#34;] Значение поля custom_css представляет собой массив, по этому здесь можно указать несколько файлов стилей.\n"
+},
+{
+	"uri": "//localhost:1313/hugo/custom/page-sort-order/",
+	"title": "Сортировка страниц в hugo",
+	"tags": null,
+	"description": "",
+	"content": "Сортировка страниц по алфавиту Если необходимо сортировать страницы в меню по алфавиту, то прописываем строку\norderSectionsby = 'title'\nв файле hugo.toml.\nСортировка страниц по весу В качестве альтернативы имеется возможность сортировать статьи по весу. В таком случае в метаданные страниц вносится запись о ее весе, к примеру, weight = 2.\n"
+},
+{
+	"uri": "//localhost:1313/hugo/",
+	"title": "HUGO",
+	"tags": null,
+	"description": "",
+	"content": "HUGO \u0026ndash; генератор статических страниц. В данной категории размещены страницы, касающиеся установки и настройки HUGO.\n"
+},
+{
+	"uri": "//localhost:1313/hugo/usage/",
+	"title": "Использование hugo",
+	"tags": null,
+	"description": "",
+	"content": "Создание сайта $ hugo new site acewiki В этой команде acewiki \u0026ndash; это название сайта. В результате в текущем каталоге будет создан подкат acewiki, содержащий пустую структуру сайта.\nhugotest/ └── acewiki ├── archetypes │ └── default.md ├── assets ├── content ├── data ├── hugo.toml ├── i18n ├── layouts ├── static └── themes Запуск сайта выполняется командой hugo serve.\n--destination publishDir \u0026ndash; по умолчанию сайт размещается в памяти. Чтобы положить его на диск, например для индексации, используется данный флаг. $ hugo serve --destination pub В результате сгенерированный сайт разместится в каталоге acewiki/pub/.\nСоздание страницы $ hugo new wiki/installation.md Затем в метaданных страницы, что между +++ и +++, необходимо в поле draft поменять значение на false.\nВставить картинку Чтобы на страничку в папке ~/hugo/test/content/hugo/custom/ вставить картинку, находящуюся в той же папке, надо написать так:\n![](/hugo/custom/chromium.png) Вставить ссылку на страничку Чтобы прейти на страничку /posts/link-test.md пишем следующее:\n[A link to some post page](/posts/link-test/) That is a link to some post page.\nТеперь чтобы перейти с той страницы обратно на эту, но уже к определенному заголовку, потребуется сделать на нем якорь.\n### [Вставить страничку]() Ссылка же будет такого вида:\nWhere will I end up after following [this link](/hugo/usage/#вставить-страничку), I wonder? Where will I end up after following this link, I wonder?\nВ меню странички справа этот заголовок будет отображаться, но переход при на жатии на ссылку работать не будет.\nКаталог layouts имеет высший приоритет по сравненеию с подобным каталогом в темах, themes. В каталогах тем имеются каты с таким же названием.\nnav bar color #007bff - было #062c56 - стало\nsearch box background-color: #f7f7f7\nbody body { margin:0; font-family:-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji; font-size:1rem; font-weight:400; line-height:1.5; color:#212529; text-align:left; background-color:#f5efe0 }\n"
+},
+{
+	"uri": "//localhost:1313/hugo/installation/",
+	"title": "Установка hugo",
+	"tags": null,
+	"description": "",
+	"content": "Установка Ссылка на архив программы https://github.com/gohugoio/hugo/releases/tag/v0.119.0 \u0026ndash; ссылка на страницу с бинарниками.\nhugo.exe \u0026raquo; D:\\cygwin64\\bin hugo_extended_0.119.0_linux-amd64.deb dpkg -i hugo_extended_0.119.0_linux-amd64.deb dpkg --get-selected |grep hugo Подключение темы $ cd acewiki $ git init $ git submodule add https://github.com/vantagedesign/ace-documentation.git themes/ace-documentation $ echo \u0026#34;theme = \u0026#39;ace-documentation\u0026#39;\u0026#34; \u0026gt;\u0026gt; hugo.toml Обновление темы $ cd themes/ace-documentation $ git pull "
+},
+{
+	"uri": "//localhost:1313/categories/",
+	"title": "Categories",
+	"tags": null,
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/tags/",
+	"title": "Tags",
+	"tags": null,
+	"description": "",
+	"content": ""
+}]

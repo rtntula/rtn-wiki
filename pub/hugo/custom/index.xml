@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Настройки on My New Test Site</title>
+    <link>//localhost:1313/hugo/custom/</link>
+    <description>Recent content in Настройки on My New Test Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Oct 2023 15:55:14 +0300</lastBuildDate><atom:link href="//localhost:1313/hugo/custom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Кастомизация стилей в hugo</title>
+      <link>//localhost:1313/hugo/custom/css-custom/</link>
+      <pubDate>Mon, 16 Oct 2023 15:15:49 +0300</pubDate>
+      
+      <guid>//localhost:1313/hugo/custom/css-custom/</guid>
+      <description>В каталоге static создаем файл style.css, в который вносим нужные правила. Эти кастомизированные правила можно сделать при помощи Инспектора в Инструментах разработчиика. К примеру мне захотелось поменять цвет фона навигационной панели из синего в фиолетовый. Тогда в файл стилей вставим такое правило: html[native-dark-active] .bg-primary { background-color: rgb(204 0 142) !important; } Чтобы наши кастомизированные правила применились, необхдимо в файл hugo.toml добавить следующие строки: [params] custom_css = [&amp;#34;style.css&amp;#34;, &amp;#34;header.css&amp;#34;] Значение поля custom_css представляет собой массив, по этому здесь можно указать несколько файлов стилей.</description>
+    </item>
+    
+    <item>
+      <title>Сортировка страниц в hugo</title>
+      <link>//localhost:1313/hugo/custom/page-sort-order/</link>
+      <pubDate>Mon, 16 Oct 2023 14:02:38 +0300</pubDate>
+      
+      <guid>//localhost:1313/hugo/custom/page-sort-order/</guid>
+      <description>Сортировка страниц по алфавиту Если необходимо сортировать страницы в меню по алфавиту, то прописываем строку
+orderSectionsby = &#39;title&#39;
+в файле hugo.toml.
+Сортировка страниц по весу В качестве альтернативы имеется возможность сортировать статьи по весу. В таком случае в метаданные страниц вносится запись о ее весе, к примеру, weight = 2.</description>
+    </item>
+    
+  </channel>
+</rss>

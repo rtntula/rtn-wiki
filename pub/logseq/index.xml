@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Logseq on My New Test Site</title>
+    <link>//localhost:1313/logseq/</link>
+    <description>Recent content in Logseq on My New Test Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Oct 2023 09:28:52 +0300</lastBuildDate><atom:link href="//localhost:1313/logseq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Использование logseq</title>
+      <link>//localhost:1313/logseq/usage/</link>
+      <pubDate>Tue, 24 Oct 2023 10:06:24 +0300</pubDate>
+      
+      <guid>//localhost:1313/logseq/usage/</guid>
+      <description>Переименование корневого каталога В случае переименования каталога, в котором находятся все данные проги, необходимо в меню базы данных добавить новый граф, выбрав соответствующий кат (зеленый). Это наводит на мысль, что можно вести много таких блокнотов, по дому и по работе, на пример, которые будут отображаться в этом же меню, см. рис. выше (фиолетовый). </description>
+    </item>
+    
+    <item>
+      <title>Установка logseq</title>
+      <link>//localhost:1313/logseq/installation/</link>
+      <pubDate>Tue, 24 Oct 2023 09:10:03 +0300</pubDate>
+      
+      <guid>//localhost:1313/logseq/installation/</guid>
+      <description>Установка logseq посредством snap По каким-то не выясненным пока причинам установить предлагаемый на сайте appimage пакект программы мне так и не удалось. Нашел в инете следующий вариант установки.
+$ apt update $ apt install snapd $ snap install core $ snap install logseq После перезагрузки стало возможным запустить прогу через диалог run (M-F2).</description>
+    </item>
+    
+  </channel>
+</rss>
